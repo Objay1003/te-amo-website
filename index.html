@@ -21,6 +21,10 @@ body {
   background-position:center;
 }
 
+a {
+  text-decoration:none;
+}
+
 #logo {
   font-size: 150px;
   display: block;
@@ -30,6 +34,25 @@ body {
   line-height: 1;
   margin-bottom: 50px;
 }
+
+#about {
+  font-family: 'Jost', sans-serif;
+
+}
+
+#menuBox {
+  display:flex;
+  flex:auto;
+  flex-basis:0;
+  flex-wrap:wrap;
+  white-space:nowrap;
+}
+
+.tabs {
+  flex:auto;
+}
+
+
 /* Selects all elements with the class navbar-link that is a descendant (child, grandchild, etc) of an element with the class w3-bar */
 .w3-bar .navbar-link {
   /* First number is the vertical padding; second is the horizontal */
@@ -66,21 +89,21 @@ body {
   <div class="w3-content">
 
     <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">MENU</h1>
-    <div class="w3-row w3-center w3-border w3-border-dark-grey">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Tea');" id="myLink">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Tea</div>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey" id="menuBox">
+      <a class="tabs" href="javascript:void(0)" onclick="openMenu(event, 'Tea');" id="myLink">
+        <div class="tablink w3-padding-large w3-hover-red">Tea</div>
       </a>
 
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Smoothies');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Smoothies</div>
+      <a class="tabs" href="javascript:void(0)" onclick="openMenu(event, 'Smoothies');">
+        <div class="tablink w3-padding-large w3-hover-red">Smoothies</div>
       </a>
 
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Specialty Drinks');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Specialty Drinks</div>
+      <a class="tabs" href="javascript:void(0)" onclick="openMenu(event, 'Specialty Drinks');">
+        <div class="tablink w3-padding-large w3-hover-red">Specialty Drinks</div>
       </a>
 
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Coffee');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Coffee</div>
+      <a class="tabs" href="javascript:void(0)" onclick="openMenu(event, 'Coffee');">
+        <div class="tablink w3-padding-large w3-hover-red">Coffee</div>
       </a>
     </div>
 
@@ -197,8 +220,8 @@ body {
 <!-- About Container -->
 <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
   <div class="w3-content">
-    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
-    <p>Mochi Donuts between the sweet and chewy Japanese rice dessert and the classic American fried donut. Our Mochi donuts are fried fresh in a unique donut ring designed to be easily shared. As you bite you will feel a slight crunch on the outside with a soft, and chewy center. They're glazed and made daily with our many flavors you won't find anywhere. </p>
+    <h1 id = "about" class="w3-center w3-bold" style="margin-bottom:64px">About</h1>
+    <p> <style> </style> Mochi Donuts between the sweet and chewy Japanese rice dessert and the classic American fried donut. Our Mochi donuts are fried fresh in a unique donut ring designed to be easily shared. As you bite you will feel a slight crunch on the outside with a soft, and chewy center. They're glazed and made daily with our many flavors you won't find anywhere. </p>
 
     <p>Our Store</p>
     <img src="./images/store.jpg" style="width:400px;max-width:100%;" class="w3-margin-top w3-margin-bottom" alt="The Store">
@@ -241,7 +264,7 @@ function openMenu(evt, menuName) {
      x[i].style.display = "none";
   }
   tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
+  for (i = 0; i < tablinks.length; i++) {
      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
   }
   document.getElementById(menuName).style.display = "block";
