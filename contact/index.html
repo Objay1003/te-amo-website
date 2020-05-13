@@ -17,10 +17,319 @@
 </head>
 <body>
 	<script>
+		$('#Drink').on('change', function () {
+			if ($(this).val() === 'Tea') {
+				$('#Coffee').hide()
+				$('#Smoothies').hide()
+				$('#Specialties').hide()
+				$('#Specialty Drinks').hide()
+				$('#poppingBoba').hide()
+				$('#Jelly').hide()
+				$('#Shots').hide()
+				$('#Size').hide()
+				$('#Size2').hide()
+				$('#Specialty Options').hide()
+				$('#Specialty_Options').hide()
+				$('#SpecialtyOptions').hide()				
+
+			}
+		})
+
+		$('#Drink').on('change', function () {
+			if ($(this).val() === 'Coffee') {
+				$('#baseTeas').hide()
+				$('#Smoothies').hide()
+				$('#Specialties').hide()
+				$('#Specialty Drinks').hide()
+				$('#Specialty Options').hide()
+				$('#teaSweetness').hide()
+				$('#teaTopping').hide()
+				$('#poppingBoba').hide()
+				$('#Shots').hide()
+				$('#Jelly').hide()
+				$('Size').hide()
+				$('Size2').hide()
+				$('Size3').hide()
+				$('#Specialty_Options').hide()
+				$('#SpecialtyOptions').hide()
+			}
+		})
+
+		$('#Drink').on('change', function () {
+			if ($(this).val() === 'Smoothies') {
+				$('#baseTeas').hide()
+				$('#Coffee').hide()
+				$('#Specialties').hide()
+				$('#Specialty Drinks').hide()
+				$('#Specialty Options').hide()
+				$('#Shots').hide()
+				$('#Milks').hide()
+				$('#teaSweetness').hide()
+				$('#teaTopping').hide()
+				$('#poppingBoba').hide()
+				$('#Jelly').hide()	
+				$('#Size').hide()
+				$('#Size2').hide()
+				$('#Size3').hide()
+				$('#Specialty_Options').hide()
+				$('#SpecialtyOptions').hide()				
+			}
+		})
+
+		$('#Drink').on('change', function () {
+			if ($(this).val() === 'Specialties') {
+				$('#baseTeas').hide()
+				$('#Smoothies').hide()
+				$('#Coffee').hide()
+				$('#Specialty Drinks').hide()
+				$('#Specialty Options').hide()
+				$('#Shots').hide()
+				$('#Milks').hide()
+				$('#teaSweetness').hide()
+				$('#teaTopping').hide()
+				$('#poppingBoba').hide()
+				$('#Jelly').hide()	
+				$('#Size').hide()
+				$('#Size2').hide()
+				$('#Size3').hide()
+				$('#Specialty_Options').hide()
+				$('#SpecialtyOptions').hide()				
+			}
+		})
+
+		$('#Drink').on('change', function () {
+			if ($(this).val() === 'Specialty Drinks') {
+				$('#baseTeas').hide()
+				$('#Smoothies').hide()
+				$('#Coffee').hide()
+				$('#Specialties').hide()
+				$('#Specialty Options').hide()
+				$('#Shots').hide()
+				$('#Milks').hide()
+				$('#teaSweetness').hide()
+				$('#teaTopping').hide()
+				$('#poppingBoba').hide()
+				$('#Jelly').hide()	
+				$('#Size').hide()
+				$('#Size2').hide()
+				$('#Specialty_Options').hide()
+				$('#SpecialtyOptions').hide()				
+			}
+		})
+
+		$('#Specialty Drinks').on('change', function () {
+			if ($(this).val() === 'Black Sesame Milk') {
+				$('#baseTeas').hide()
+				$('#Smoothies').hide()
+				$('#Coffee').hide()
+				$('#Specialties').hide()
+				$('#Shots').hide()
+				$('#Milks').hide()
+				$('#teaSweetness').hide()
+				$('#teaTopping').hide()
+				$('#poppingBoba').hide()
+				$('#Jelly').hide()	
+				$('#Size').hide()
+				$('#Size2').hide()
+				$('#Specialty Options').hide()
+				$('#Specialty_Options').hide()
+			}
+		})
+
+		$('#Specialty Drinks').on('change', function () {
+			if ($(this).val() === 'House Black Milk Tea') {
+				$('#baseTeas').hide()
+				$('#Smoothies').hide()				
+				$('#Coffee').hide()
+				$('#Specialties').hide()
+				$('#Shots').hide()
+				$('#Milks').hide()
+				$('#teaSweetness').hide()
+				$('#teaTopping').hide()
+				$('#poppingBoba').hide()
+				$('#Jelly').hide()	
+				$('#Size').hide()
+				$('#Size2').hide()
+				$('#Specialty Options').hide()
+				$('#SpecialtyOptions').hide()
+			}
+		})
+
+		$('#Specialty Drinks').on('change', function() {
+			if ($(this).val() === 'Taro Milk') {
+				$('#baseTeas').hide()
+				$('#Smoothies').hide()				
+				$('#Coffee').hide()
+				$('#Specialties').hide()
+				$('#Shots').hide()
+				$('#Milks').hide()
+				$('#teaSweetness').hide()
+				$('#teaTopping').hide()
+				$('#poppingBoba').hide()
+				$('#Jelly').hide()	
+				$('#Size').hide()
+				$('#Size2').hide()
+			}
+		})
+
+		$('#teaTopping').on('change', function() {
+			if ($(this).val() === 'Popping Boba') {
+			$('#Coffee').hide()
+				$('#Smoothies').hide()
+				$('#Specialties').hide()
+				$('#Specialty Drinks').hide()
+				$('#Jelly').hide()
+				$('#Shots').hide()
+				$('#Size').hide()
+				$('#Size2').hide()
+				$('#Specialty Options').hide()
+			}
+		})
+
+		$('#teaTopping').on('change', function() {
+			if ($(this).val() === 'Jelly') {
+			$('#Coffee').hide()
+				$('#Smoothies').hide()
+				$('#Specialties').hide()
+				$('#Specialty Drinks').hide()
+				$('#poppingBoba').hide()
+				$('#Shots').hide()
+				$('#Size').hide()
+				$('#Size2').hide()
+				$('#Specialty Options').hide()
+			}
+		})
+
+		$('#Coffee').on('change', function() {
+			if ($(this).val() === 'Espresso') {
+			$('#Coffee').hide()
+				$('#baseTeas').hide()
+				$('#Smoothies').hide()
+				$('#Specialties').hide()
+				$('#Specialty Drinks').hide()
+				$('#Specialty Options').hide()
+				$('#teaSweetness').hide()
+				$('#teaTopping').hide()
+				$('#poppingBoba').hide()
+				$('#Jelly').hide()
+				$('Size').hide()
+				$('Size2').hide()
+				$('Size3').hide()
+			}
+		})
+
+		$('#Coffee').on('change', function() {
+			if ($(this).val() === 'Cortado') {
+			$('#Coffee').hide()
+				$('#baseTeas').hide()
+				$('#Smoothies').hide()
+				$('#Specialties').hide()
+				$('#Specialty Drinks').hide()
+				$('#Specialty Options').hide()
+				$('#teaSweetness').hide()
+				$('#teaTopping').hide()
+				$('#poppingBoba').hide()
+				$('#Jelly').hide()
+				$('Size').hide()
+				$('Size2').hide()
+				$('Size3').hide()
+			}
+		})
+
+		$('#Coffee').on('change', function() {
+			if ($(this).val() === 'Brewed Coffee') {
+			$('#Coffee').hide()
+				$('#baseTeas').hide()
+				$('#Smoothies').hide()
+				$('#Specialties').hide()
+				$('#Specialty Drinks').hide()
+				$('#Specialty Options').hide()
+				$('#teaSweetness').hide()
+				$('#teaTopping').hide()
+				$('#poppingBoba').hide()
+				$('#Shots').hide()
+				$('#Jelly').hide()
+				$('Size').hide()
+				$('Size3').hide()
+			}
+		})
+
+		$('#Coffee').on('change', function() {
+			if ($(this).val() === 'Capuccino') {
+			$('#Coffee').hide()
+				$('#baseTeas').hide()
+				$('#Smoothies').hide()
+				$('#Specialties').hide()
+				$('#Specialty Drinks').hide()
+				$('#Specialty Options').hide()
+				$('#teaSweetness').hide()
+				$('#teaTopping').hide()
+				$('#poppingBoba').hide()
+				$('#Shots').hide()
+				$('#Jelly').hide()
+				$('Size').hide()
+				$('Size3').hide()
+			}
+		})
+
+		$('#Coffee').on('change', function() {
+			if ($(this).val() === 'Caffe Latte') {
+			$('#Coffee').hide()
+				$('#baseTeas').hide()
+				$('#Smoothies').hide()
+				$('#Specialties').hide()
+				$('#Specialty Drinks').hide()
+				$('#Specialty Options').hide()
+				$('#teaSweetness').hide()
+				$('#teaTopping').hide()
+				$('#poppingBoba').hide()
+				$('#Shots').hide()
+				$('#Jelly').hide()
+				$('Size2').hide()
+				$('Size3').hide()
+			}
+		})
+
+		$('#Coffee').on('change', function() {
+			if ($(this).val() === 'Mocha') {
+			$('#Coffee').hide()
+				$('#baseTeas').hide()
+				$('#Smoothies').hide()
+				$('#Specialties').hide()
+				$('#Specialty Drinks').hide()
+				$('#Specialty Options').hide()
+				$('#teaSweetness').hide()
+				$('#teaTopping').hide()
+				$('#poppingBoba').hide()
+				$('#Shots').hide()
+				$('#Jelly').hide()
+				$('Size2').hide()
+				$('Size3').hide()
+			}
+		})
+
+		$('#Coffee').on('change', function() {
+			if ($(this).val() === 'Americano') {
+			$('#Coffee').hide()
+				$('#baseTeas').hide()
+				$('#Smoothies').hide()
+				$('#Specialties').hide()
+				$('#Specialty Drinks').hide()
+				$('#Specialty Options').hide()
+				$('#teaSweetness').hide()
+				$('#teaTopping').hide()
+				$('#poppingBoba').hide()
+				$('#Shots').hide()
+				$('#Jelly').hide()
+				$('Size2').hide()
+				$('Size3').hide()
+			}
+		})
+
 	</script>
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-		z	<form class="contact100-form validate-form" action="#">
+			<form class="contact100-form validate-form" action="#">
 				<span class="contact100-form-title">
 					Place an Order!
 				</span>
@@ -46,7 +355,7 @@
 					<span class="focus-input100"></span>
 				</div>
 				
-								<div class="wrap-input100 validate-input" data-validate="Required">
+				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Pickup Time</span>
 					<input class="input100" type="text" name="name" placeholder="What time can you pick up your order(s)">
 					<span class="focus-input100"></span>
@@ -55,10 +364,12 @@
 				<div class="wrap-input100 input100-select">
 					<span class="label-input100">Drink</span>
 					<div>
-						<select class="selection-2" name="order">
+						<select id="Drink" class="selection-2" name="order">
+							<option>Select Drink</option>
 							<option>Tea</option>
 							<option>Smoothies</option>
 							<option>Specialty Drinks</option>
+							<option>Specialties</option>
 							<option>Coffee</option>
 						</select>
 					</div>
@@ -68,63 +379,236 @@
 				<div class="wrap-input100 input100-select">
 					<span class="label-input100">Base Tea</span>
 					<div>
-						<select class="selection-2" name="order">
-							<option>Black Tea</option>
-							<option>Green Tea</option>
-							<option>Oolong Tea</option>
-							<option>Non-Caffeinated Tea</option>
+						<select id="baseTeas" class="selection-2" name="order">
+							<option>Select Base Tea</option>
+							<option>Taro Milk</option>
+							<option>House Black Tea</option>
+							<option>Thai Tea</option>
+							<option>Jasmine Green Tea</option>
+							<option>Matcha Green Tea</option>
+							<option>Iced Coffee</option>
 						</select>
 					</div>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 input100-select">
-					<span class="label-input100">Tea Selections</span>
+					<span class="label-input100">Coffee</span>
 					<div>
-						<select class="selection-2" name="order">
-							<option>Assam</option>
-							<option>Earl Gray</option>
+						<select id="Coffee" class="selection-2" name="order">
+							<option>Select Coffee</option>
+							<option>Espresso</option>
+							<option>Cortado</option>
+							<option>Brewed Coffee</option>
+							<option>Iced Coffee</option>
+							<option>Capuccino</option>
+							<option>Caffe Latte</option>
+							<option>Mocha</option>
+							<option>Americano</option>
 						</select>
 					</div>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 input100-select">
-					<span class="label-input100">Tea Selections</span>
+					<span class="label-input100">Specialty Drinks</span>
 					<div>
-						<select class="selection-2" name="order">
-							<option>Jasmine</option>
-							<option>Jade</option>
-							<option>Matcha</option>
+						<select id="Specialty Drinks" class="selection-2" name="order">
+							<option>Select Specialty Drink</option>
+							<option>Hong Kong Red</option>
+							<option>Iced Coffee Milk Tea</option>
+							<option>Black Sesame Milk</option>
+							<option>Strawberry Matcha Latte</option>
+							<option>Uji Matcha Latte</option>
+							<option>House Black Milk Tea</option>
+							<option>Black Sugar Pearl</option>
+							<option>Taro Milk</option>
+							<option>Thai Milk Tea</option>
 						</select>
 					</div>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 input100-select">
-					<span class="label-input100">Tea Selections</span>
+					<span class="label-input100">Specialties</span>
 					<div>
-						<select class="selection-2" name="order">
-							<option>Golden</option>
-							<option>Osmanthus</option>
-							<option>Matcha</option>
-							<option>Grape</option>
+						<select id="Specialties" class="selection-2" name="order">
+							<option>Select Specialties</option>
+							<option>Coco Loco</option>
+							<option>Matcha Latte</option>
+							<option>Horchata Latte</option>
+							<option>The Big Red</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Smoothies</span>
+					<div>
+						<select id="Smoothies" class="selection-2" name="order">
+							<option>Strawberry Freeze</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Milk</span>
+					<div>
+						<select id="Milks" class="selection-2" name="order">
+							<option>Select Milk</option>
+							<option>No Milk</option>
+							<option>Organic Milk</option>
+							<option>Oat Milk</option>
+							<option>Almond Milk</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Sweetness</span>
+					<div>
+						<select id="teaSweetness" class="selection-2" name="order">
+							<option>Select Sweetness</option>
+							<option>None</option>
+							<option>Less</option>
+							<option>Regular</option>
+							<option>Extra</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Toppings(+$0.50 ea)</span>
+					<div>
+						<select id="teaTopping" class="selection-2" name="topping">
+							<option>Select Toppings</option>
+							<option>Brown Sugar Boba</option>
+							<option>Aloe Vera</option>
+							<option>Red Bean</option>
+							<option>Taro Chunks</option>
+							<option>Egg Pudding</option>
+							<option>Organic Cream</option>
+							<option>Popping Boba</option>
+							<option>Jelly</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Popping Boba</span>
+					<div>
+						<select id="poppingBoba" class="selection-2" name="order">
+							<option>Select Popping Boba</option>
+							<option>Mango</option>
+							<option>Passion Fruit</option>
+							<option>Strawberry</option>
+							<option>Lychee</option>
 							<option>Peach</option>
-							<option>Roasted</option>
 						</select>
 					</div>
 					<span class="focus-input100"></span>
 				</div>
 
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Jelly</span>
+					<div>
+						<select id="Jelly" class="selection-2" name="order">
+							<option>Select Jelly</option>
+							<option>Lychee</option>
+							<option>Coconut</option>
+							<option>Oat Milk</option>
+							<option>Green Apple</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Shots</span>
+					<div>
+						<select id="Shots" class="selection-2" name="order">
+							<option>Number of Shots</option>
+							<option>Single</option>
+							<option>Double</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
 
 				<div class="wrap-input100 input100-select">
-					<span class="label-input100">Toppings</span>
+					<span class="label-input100">Size</span>
 					<div>
-						<select class="selection-2" name="topping">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>You get the idea</option>
+						<select id="Size" class="selection-2" name="order">
+							<option>Select Size</option>
+							<option>12oz hot</option>
+							<option>16oz hot</option>
+							<option>22oz iced</option>>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Size</span>
+					<div>
+						<select id="Size2" class="selection-2" name="order">
+							<option>Select Size</option>
+							<option>12oz hot</option>
+							<option>16oz hot</option>	
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Size</span>
+					<div>
+						<select id="Size3" class="selection-2" name="order">
+							<option>Select Size</option>
+							<option>16oz hot</option>
+							<option>22oz cold</option>	
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Specialty Options</span>
+					<div>
+						<select id="Specialty Options" class="selection-2" name="order">
+							<option>Select Options</option>
+							<option>None</option>
+							<option>Non-Caffeinated</option>
+							<option>Hot Drink Option</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Specialty Options</span>
+					<div>
+						<select id="Specialty_Options" class="selection-2" name="order">
+							<option>Select Options</option>
+							<option>None</option>
+							<option>Hot Drink Option</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Specialty Options</span>
+					<div>
+						<select id="SpecialtyOptions" class="selection-2" name="order">
+							<option>Select Options</option>
+							<option>None</option>
+							<option>Non-Caffeinated</option>
 						</select>
 					</div>
 					<span class="focus-input100"></span>
@@ -132,7 +616,7 @@
 
 				<div class="wrap-input100 validate-input" data-validate = "Required">
 					<span class="label-input100">Additional Order Info</span>
-					<textarea class="input100" name="message" placeholder="Extra items, side orders, merch, etc."></textarea>
+					<textarea class="input100" name="message" placeholder="Order Notes"></textarea>
 					<span class="focus-input100"></span>
 				</div>
 

@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Montserrat:ital,wght@0,100;0,200;1,100&family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
 <style>
 body, html {height: 100%}
 body, html {scroll-behavior:smooth}
@@ -105,49 +106,49 @@ a {
       <a class="tabs" href="javascript:void(0)" onclick="openMenu(event, 'Coffee');">
         <div class="tablink w3-padding-large w3-hover-red">Coffee</div>
       </a>
+
+      <a class="tabs" href="javascript:void(0)" onclick="openMenu(event, 'Specialties');">
+        <div class="tablink w3-padding-large w3-hover-red">Specialties</div>
+      </a>
+
+      <a class="tabs" href="javascript:void(0)" onclick="openMenu(event, 'Mochi Donuts');">
+        <div class="tablink w3-padding-large w3-hover-red">Mochi Donuts</div>
+      </a>
+
     </div>
 
     <div id="Tea" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Black Tea</b><span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
-      <p class="w3-text-grey">Asam or Earl Gray</p>
+      <h1><b>Taro Milk</b><span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+      <p class="w3-text-grey"></p>
       <hr>
 
-      <h1><b>Green Tea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
-      <p class="w3-text-grey">Jasmine/Jade/Matcha</p>
+      <h1><b>House Black Tea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+      <p class="w3-text-grey"></p>
       <hr>
 
-      <h1><b>Oolong Tea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
-      <p class="w3-text-grey">Golden/Osmanthus/Rose/Grape/Peach/Roasted</p>
+      <h1><b>Thai Tea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+      <p class="w3-text-grey"></p>
       <hr>
 
-      <h1><b>Non-Caffeinated Tea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
-      <p class="w3-text-grey">Rooibus/Lemon Fruit</p>
+      <h1><b>Jasmine Green Tea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+      <p class="w3-text-grey"></p>
       <hr>
+
+      <h1><b>Matcha Green Tea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Iced Coffee</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+      <p class="w3-text-grey"></p>
     </div>
 
     <div id="Smoothies" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Mango Freeze</b><span class="w3-right w3-tag w3-dark-grey w3-round">$5.75</span></h1>
-      <p class="w3-text-grey">ice fresh mango smoothie with milk and mango bits</p>
-      <hr>
-
       <h1><b>Strawberry Freeze</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.75</span></h1>
       <p class="w3-text-grey">ice fresh strawberry with milk and strawberry bits</p>
-      <hr>
-
-      <h1><b>Strawberry Horchata</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.75</span></h1>
-      <p class="w3-text-grey">strawberry freeze blended with horchata</p>
-      <hr>
-
-      <h1><b>Pina Colada</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.75</span></h1>
-      <p class="w3-text-grey">ice fresh pineapple, coconut milk, pineapple bits</p>
-      <hr>
-
-      <h1><b>Matcha Orea Freeze</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.75</span></h1>
-      <p class="w3-text-grey">ice fresh matcha, milk, creama, oreo crumble</p>
     </div>
 
     <div id="Specialty Drinks" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Crème Brûlée Milk</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <h1><b>Crème Brûlée Milk</b> <span class="w3-tag w3-grey w3-round">Popular</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
       <p class="w3-text-grey">house made crème brûlée, brown sugar boba, organic milk</p>
       <hr>
 
@@ -161,18 +162,45 @@ a {
 
       <h1><b>Iced Coffee Milk Tea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
       <p class="w3-text-grey">Wrecking Ball Ethiopian blend iced coffee, brown sugar boba, creama</p>
+
+      <h1><b>Black Sesame Milk</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Wrecking Ball Ethiopian blend iced coffee, brown sugar boba, creama</p>
+      <hr>
+
+      <h1><b>Strawberry Matcha Latte</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">premium matcha, organic milk, house made strawberry puree</p>
+      <hr>
+
+      <h1><b>Uji Matcha Latte</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">premium matcha tea, brown sugar syrup, organic milk, and brown sugar boba</p>
+      <hr>
+
+      <h1><b>House Black Milk Tea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">premium black tea with house cream and brown sugar boba</p>
+      <hr>
+
+      <h1><b>Black Sugar Pearl</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">premium black tea, organic milk, brown sugar syrup, brown sugar boba</p>
+      <hr>
+
+      <h1><b>Taro Milk</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">fresh taro milk with real taro chunks</p>
+      <hr>
+
+      <h1><b>Thai Milk Tea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">black tea topped with house organic half and half</p>
     </div>
 
     <div id="Coffee" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Espresso</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.00 / $3.75</span></h1>
+      <h1><b>Espresso</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.00</br>$3.75</span></h1>
       <p class="w3-text-grey">Available with Single or Double shots</p>
       <hr>
 
-      <h1><b>Cortado</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.25 / $3.75</span></h1>
+      <h1><b>Cortado</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.25</br>$3.75</span></h1>
       <p class="w3-text-grey">Available with Single or Double shots</p>
       <hr>
 
-      <h1><b>Brewed Coffee</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.00 / $.75</span></h1>
+      <h1><b>Brewed Coffee</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.00</br>$3.75</span></h1>
       <p class="w3-text-grey">Available as 12oz hot or 16oz cold</p>
       <hr>
 
@@ -180,38 +208,42 @@ a {
       <p class="w3-text-grey">Only available as 22oz cold</p>
       <hr>
 
-      <h1><b>Capuccino</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.25 / $5.25</span></h1>
+      <h1><b>Capuccino</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.25</br>$5.25</span></h1>
       <p class="w3-text-grey">Available as 12oz hot or 16oz cold</p>
       <hr>
 
-      <h1><b>Caffe Latte</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.25 / $5.25 / $5.25</span></h1>
+      <h1><b>Caffe Latte</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.25</br>$5.25</br>$5.25</span></h1>
       <p class="w3-text-grey">Available as 12oz hot, 16oz hot, or 22oz iced</p>
       <hr>
 
-      <h1><b>Mocha</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00 / $6.00 / $6.00</span></h1>
+      <h1><b>Mocha</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</br>$6.00</br>$6.00</span></h1>
       <p class="w3-text-grey">Available as 12oz hot, 16oz hot, or 22oz iced</p>
       <hr>
 
-      <h1><b>Americano</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.25 / $4.00 / $4.00</span></h1>
+      <h1><b>Americano</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.25</br>$4.00</br>$4.00</span></h1>
       <p class="w3-text-grey">Available as 12oz hot, 16oz hot, or 22oz iced</p>
     </div>
 
     <div id="Specialties" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Coco Loco</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.00 / $3.75</span></h1>
+      <h1><b>Coco Loco</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
       <p class="w3-text-grey">espresso, mocha, in-house made coconut</p>
       <hr>
 
-      <h1><b>Matcha Latte</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.25 / $3.75</span></h1>
+      <h1><b>Matcha Latte</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
       <p class="w3-text-grey">premium matcha tea, honey, almond milk</p>
       <hr>
 
-      <h1><b>Horchata Latte</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.00 / $.75</span></h1>
+      <h1><b>Horchata Latte</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
       <p class="w3-text-grey">espresso, horchata milk</p>
       <hr>
 
-      <h1><b>The Big Red</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.75</span></h1>
+      <h1><b>The Big Red</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
       <p class="w3-text-grey">espresso, red velvet milk, in-house made creama</p>
-      <hr>
+    </div>
+
+    <div id="Mochi Donuts" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Coco Loco</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.00/ea.</br>$1.50 w/ drink</span></h1>
+      <p class="w3-text-grey">espresso, mocha, in-house made coconut</p>
     </div>
 </div>
 
@@ -223,7 +255,7 @@ a {
     <h1 id = "about" class="w3-center w3-bold" style="margin-bottom:64px">About</h1>
     <p> <style> </style> Mochi Donuts between the sweet and chewy Japanese rice dessert and the classic American fried donut. Our Mochi donuts are fried fresh in a unique donut ring designed to be easily shared. As you bite you will feel a slight crunch on the outside with a soft, and chewy center. They're glazed and made daily with our many flavors you won't find anywhere. </p>
 
-    <p>Our Store</p>
+    <h1><b>Our Store<b></h1>
     <img src="./images/store.jpg" style="width:400px;max-width:100%;" class="w3-margin-top w3-margin-bottom" alt="The Store">
     <h1><b>Opening Hours</b></h1>
 
