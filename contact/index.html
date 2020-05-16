@@ -66,10 +66,10 @@
 				</div>
 
 				<div class="wrap-input100 input100-select">
-					<span class="label-input100">Base Tea</span>
+					<span class="label-input100">Tea</span>
 					<div>
 						<select id="baseTeas" class="selection-2" name="order">
-							<option>Select Base Tea</option>
+							<option>Select Tea</option>
 							<option>Taro Milk</option>
 							<option>House Black Tea</option>
 							<option>Thai Tea</option>
@@ -102,7 +102,7 @@
 				<div class="wrap-input100 input100-select">
 					<span class="label-input100">Specialty Drinks</span>
 					<div>
-						<select id="Specialty Drinks" class="selection-2" name="order">
+						<select id="Specialty_Drinks" class="selection-2" name="order">
 							<option>Select Specialty Drink</option>
 							<option>Hong Kong Red</option>
 							<option>Iced Coffee Milk Tea</option>
@@ -269,7 +269,7 @@
 				<div class="wrap-input100 input100-select">
 					<span class="label-input100">Specialty Options</span>
 					<div>
-						<select id="Specialty Options" class="selection-2" name="order">
+						<select id="SpecialtyOptions" class="selection-2" name="order">
 							<option>Select Options</option>
 							<option>None</option>
 							<option>Non-Caffeinated</option>
@@ -294,7 +294,7 @@
 				<div class="wrap-input100 input100-select">
 					<span class="label-input100">Specialty Options</span>
 					<div>
-						<select id="SpecialtyOptions" class="selection-2" name="order">
+						<select id="Specialty__Options" class="selection-2" name="order">
 							<option>Select Options</option>
 							<option>None</option>
 							<option>Non-Caffeinated</option>
@@ -329,31 +329,76 @@
 	<div id="dropDownSelect1"></div>
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 	<script>
+
+		$('#teaSweetness').parents('.wrap-input100').hide()
+		$('#teaTopping').parents('.wrap-input100').hide()
+		$('#poppingBoba').parents('.wrap-input100').hide()
+		$('#Jelly').parents('.wrap-input100').hide()
+		$('#Milks').parents('.wrap-input100').hide()
+		$('#Shots').parents('.wrap-input100').hide()
+		$('#Size').parents('.wrap-input100').hide()
+		$('#Size2').parents('.wrap-input100').hide()
+		$('#Size3').parents('.wrap-input100').hide()
+		$('#SpecialtyOptions').parents('.wrap-input100').hide()
+		$('#Specialty_Options').parents('.wrap-input100').hide()
+		$('#Specialty__Options').parents('.wrap-input100').hide()
+
+		$('#Drink').on('change', function () {
+			if ($(this).val() === 'Select Drink') {
+				$('#baseTeas').parents('.wrap-input100').show()
+				$('#Coffee').parents('.wrap-input100').show()
+				$('#Smoothies').parents('.wrap-input100').show()
+				$('#Specialties').parents('.wrap-input100').show()
+				$('#Specialty_Drinks').parents('.wrap-input100').show()
+				$('#teaSweetness').parents('.wrap-input100').hide()
+				$('#teaTopping').parents('.wrap-input100').hide()
+				$('#poppingBoba').parents('.wrap-input100').hide()
+				$('#Jelly').parents('.wrap-input100').hide()
+				$('#Milks').parents('.wrap-input100').hide()
+				$('#Shots').parents('.wrap-input100').hide()
+				$('#Size').parents('.wrap-input100').hide()
+				$('#Size2').parents('.wrap-input100').hide()
+				&('#Size3').parents('.wrap-input100').hide()
+				$('#SpecialtyOptions').parents('.wrap-input100').hide()
+				$('#Specialty_Options').parents('.wrap-input100').hide()
+				$('#Specialty__Options').parents('.wrap-input100').hide()
+				
+				
+
+			}
+		})
+
 		$('#Drink').on('change', function () {
 			if ($(this).val() === 'Tea') {
+				$('#baseTeas').parents('.wrap-input100').show()
+				$('#teaSweetness').parents('.wrap-input100').show()
+				$('#teaTopping').parents('.wrap-input100').show()
+				$('#Milks').parents('.wrap-input100').show()
+				$('#Size3').parents('.wrap-input100').show()
 				$('#Coffee').parents('.wrap-input100').hide()
 				$('#Smoothies').parents('.wrap-input100').hide()
 				$('#Specialties').parents('.wrap-input100').hide()
-				$('#Specialty Drinks').parents('.wrap-input100').hide()
+				$('#Specialty_Drinks').parents('.wrap-input100').hide()
 				$('#poppingBoba').parents('.wrap-input100').hide()
 				$('#Jelly').parents('.wrap-input100').hide()
 				$('#Shots').parents('.wrap-input100').hide()
 				$('#Size').parents('.wrap-input100').hide()
 				$('#Size2').parents('.wrap-input100').hide()
-				$('#Specialty Options').parents('.wrap-input100').hide()
+				$('#SpecialtyOptions').parents('.wrap-input100').hide()
 				$('#Specialty_Options').parents('.wrap-input100').hide()
-				$('#SpecialtyOptions').parents('.wrap-input100').hide()				
+				$('#Specialty__Options').parents('.wrap-input100').hide()				
 
 			}
 		})
 
 		$('#Drink').on('change', function () {
 			if ($(this).val() === 'Coffee') {
+				$('#Coffee').parents('.wrap-input100').show()
+				$('#Milks').parents('.wrap-input100').show()
 				$('#baseTeas').parents('.wrap-input100').hide()
 				$('#Smoothies').parents('.wrap-input100').hide()
 				$('#Specialties').parents('.wrap-input100').hide()
-				$('#Specialty Drinks').parents('.wrap-input100').hide()
-				$('#Specialty Options').parents('.wrap-input100').hide()
+				$('#Specialty_Drinks').parents('.wrap-input100').hide()
 				$('#teaSweetness').parents('.wrap-input100').hide()
 				$('#teaTopping').parents('.wrap-input100').hide()
 				$('#poppingBoba').parents('.wrap-input100').hide()
@@ -362,17 +407,20 @@
 				$('Size').parents('.wrap-input100').hide()
 				$('Size2').parents('.wrap-input100').hide()
 				$('Size3').parents('.wrap-input100').hide()
-				$('#Specialty_Options').parents('.wrap-input100').hide()
 				$('#SpecialtyOptions').parents('.wrap-input100').hide()
+				$('#Specialty_Options').parents('.wrap-input100').hide()
+				$('#Specialty__Options').parents('.wrap-input100').hide()
+
 			}
 		})
 
 		$('#Drink').on('change', function () {
 			if ($(this).val() === 'Smoothies') {
+				$('#Smoothies').parents('.wrap-input100').show()
 				$('#baseTeas').parents('.wrap-input100').hide()
 				$('#Coffee').parents('.wrap-input100').hide()
 				$('#Specialties').parents('.wrap-input100').hide()
-				$('#Specialty Drinks').parents('.wrap-input100').hide()
+				$('#Specialty_Drinks').parents('.wrap-input100').hide()
 				$('#Specialty Options').parents('.wrap-input100').hide()
 				$('#Shots').parents('.wrap-input100').hide()
 				$('#Milks').parents('.wrap-input100').hide()
@@ -383,20 +431,22 @@
 				$('#Size').parents('.wrap-input100').hide()
 				$('#Size2').parents('.wrap-input100').hide()
 				$('#Size3').parents('.wrap-input100').hide()
+				$('#SpecialtyOptions').parents('.wrap-input100').hide()
 				$('#Specialty_Options').parents('.wrap-input100').hide()
-				$('#SpecialtyOptions').parents('.wrap-input100').hide()				
+				$('#Specialty__Options').parents('.wrap-input100').hide()				
 			}
 		})
 
 		$('#Drink').on('change', function () {
 			if ($(this).val() === 'Specialties') {
+				$('#Specialties').parents('.wrap-input100').hide()
 				$('#baseTeas').parents('.wrap-input100').hide()
 				$('#Smoothies').parents('.wrap-input100').hide()
 				$('#Coffee').parents('.wrap-input100').hide()
-				$('#Specialty Drinks').parents('.wrap-input100').hide()
-				$('#Specialty Options').parents('.wrap-input100').hide()
+				$('#Specialty_Drinks').parents('.wrap-input100').hide()
+				$('#SpecialtyOptions').parents('.wrap-input100').hide()
 				$('#Shots').parents('.wrap-input100').hide()
-				$('#Milks').hide()
+				$('#Milks').parents('.wrap-input100').hide()
 				$('#teaSweetness').parents('.wrap-input100').hide()
 				$('#teaTopping').parents('.wrap-input100').hide()
 				$('#poppingBoba').parents('.wrap-input100').hide()
@@ -405,74 +455,18 @@
 				$('#Size2').parents('.wrap-input100').hide()
 				$('#Size3').parents('.wrap-input100').hide()
 				$('#Specialty_Options').parents('.wrap-input100').hide()
-				$('#SpecialtyOptions').parents('.wrap-input100').hide()				
+				$('#Specialty__Options').parents('.wrap-input100').hide()				
 			}
 		})
 
 		$('#Drink').on('change', function () {
 			if ($(this).val() === 'Specialty Drinks') {
+				$('#Specialty_Drinks').parents('.wrap-input100').show()
 				$('#baseTeas').parents('.wrap-input100').hide()
 				$('#Smoothies').parents('.wrap-input100').hide()
 				$('#Coffee').parents('.wrap-input100').hide()
 				$('#Specialties').parents('.wrap-input100').hide()
-				$('#Specialty Options').parents('.wrap-input100').hide()
-				$('#Shots').parents('.wrap-input100').hide()
-				$('#Milks').parents('.wrap-input100').hide()
-				$('#teaSweetness').parents('.wrap-input100').hide()
-				$('#teaTopping').parents('.wrap-input100').hide()
-				$('#poppingBoba').parents('.wrap-input100').hide()
-				$('#Jelly').parents('.wrap-input100').hide()	
-				$('#Size').parents('.wrap-input100').hide()
-				$('#Size2').parents('.wrap-input100').hide()
-				$('#Specialty_Options').parents('.wrap-input100').hide()
-				$('#SpecialtyOptions').parents('.wrap-input100').hide()				
-			}
-		})
-
-		$('#Specialty Drinks').on('change', function () {
-			if ($(this).val() === 'Black Sesame Milk') {
-				$('#baseTeas').parents('.wrap-input100').hide()
-				$('#Smoothies').parents('.wrap-input100').hide()
-				$('#Coffee').parents('.wrap-input100').hide()
-				$('#Specialties').parents('.wrap-input100').hide()
-				$('#Shots').parents('.wrap-input100').hide()
-				$('#Milks').parents('.wrap-input100').hide()
-				$('#teaSweetness').parents('.wrap-input100').hide()
-				$('#teaTopping').parents('.wrap-input100').hide()
-				$('#poppingBoba').parents('.wrap-input100').hide()
-				$('#Jelly').parents('.wrap-input100').hide()	
-				$('#Size').parents('.wrap-input100').hide()
-				$('#Size2').parents('.wrap-input100').hide()
-				$('#Specialty Options').parents('.wrap-input100').hide()
-				$('#Specialty_Options').parents('.wrap-input100').hide()
-			}
-		})
-
-		$('#Specialty Drinks').on('change', function () {
-			if ($(this).val() === 'House Black Milk Tea') {
-				$('#baseTeas').parents('.wrap-input100').hide()
-				$('#Smoothies').parents('.wrap-input100').hide()				
-				$('#Coffee').parents('.wrap-input100').hide()
-				$('#Specialties').parents('.wrap-input100').hide()
-				$('#Shots').parents('.wrap-input100').hide()
-				$('#Milks').parents('.wrap-input100').hide()
-				$('#teaSweetness').parents('.wrap-input100').hide()
-				$('#teaTopping').parents('.wrap-input100').hide()
-				$('#poppingBoba').parents('.wrap-input100').hide()
-				$('#Jelly').parents('.wrap-input100').hide()	
-				$('#Size').parents('.wrap-input100').hide()
-				$('#Size2').parents('.wrap-input100').hide()
-				$('#Specialty Options').parents('.wrap-input100').hide()
 				$('#SpecialtyOptions').parents('.wrap-input100').hide()
-			}
-		})
-
-		$('#Specialty Drinks').on('change', function() {
-			if ($(this).val() === 'Taro Milk') {
-				$('#baseTeas').parents('.wrap-input100').hide()
-				$('#Smoothies').parents('.wrap-input100').hide()				
-				$('#Coffee').parents('.wrap-input100').hide()
-				$('#Specialties').parents('.wrap-input100').hide()
 				$('#Shots').parents('.wrap-input100').hide()
 				$('#Milks').parents('.wrap-input100').hide()
 				$('#teaSweetness').parents('.wrap-input100').hide()
@@ -481,153 +475,274 @@
 				$('#Jelly').parents('.wrap-input100').hide()	
 				$('#Size').parents('.wrap-input100').hide()
 				$('#Size2').parents('.wrap-input100').hide()
+				$('#Size3').parents('.wrap-input100').show()
+				$('#Specialty_Options').parents('.wrap-input100').hide()
+				$('#Specialty__Options').parents('.wrap-input100').hide()				
+			}
+		})
+
+		$('#Specialty_Drinks').on('change', function () {
+			if ($(this).val() === 'Black Sesame Milk') {
+				$('#Specialty_Drinks').parents('.wrap-input100').show()
+				$('#baseTeas').parents('.wrap-input100').hide()
+				$('#Smoothies').parents('.wrap-input100').hide()
+				$('#Coffee').parents('.wrap-input100').hide()
+				$('#Specialties').parents('.wrap-input100').hide()
+				$('#SpecialtyOptions').parents('.wrap-input100').hide()
+				$('#Shots').parents('.wrap-input100').hide()
+				$('#Milks').parents('.wrap-input100').hide()
+				$('#teaSweetness').parents('.wrap-input100').hide()
+				$('#teaTopping').parents('.wrap-input100').hide()
+				$('#poppingBoba').parents('.wrap-input100').hide()
+				$('#Jelly').parents('.wrap-input100').hide()	
+				$('#Size').parents('.wrap-input100').hide()
+				$('#Size2').parents('.wrap-input100').hide()
+				$('#Size3').parents('.wrap-input100').show()
+				$('#Specialty_Options').parents('.wrap-input100').hide()
+				$('#Specialty__Options').parents('.wrap-input100').show()
+			}
+		})
+
+		$('#Specialty_Drinks').on('change', function () {
+			if ($(this).val() === 'House Black Milk Tea') {
+				$('#Specialty_Drinks').parents('.wrap-input100').show()
+				$('#baseTeas').parents('.wrap-input100').hide()
+				$('#Smoothies').parents('.wrap-input100').hide()
+				$('#Coffee').parents('.wrap-input100').hide()
+				$('#Specialties').parents('.wrap-input100').hide()
+				$('#SpecialtyOptions').parents('.wrap-input100').hide()
+				$('#Shots').parents('.wrap-input100').hide()
+				$('#Milks').parents('.wrap-input100').hide()
+				$('#teaSweetness').parents('.wrap-input100').hide()
+				$('#teaTopping').parents('.wrap-input100').hide()
+				$('#poppingBoba').parents('.wrap-input100').hide()
+				$('#Jelly').parents('.wrap-input100').hide()	
+				$('#Size').parents('.wrap-input100').hide()
+				$('#Size2').parents('.wrap-input100').hide()
+				$('#Size3').parents('.wrap-input100').show()
+				$('#Specialty_Options').parents('.wrap-input100').show()
+				$('#Specialty__Options').parents('.wrap-input100').hide()	
+			}
+		})
+
+		$('#Specialty_Drinks').on('change', function() {
+			if ($(this).val() === 'Taro Milk') {
+				$('#Specialty_Drinks').parents('.wrap-input100').show()
+				$('#baseTeas').parents('.wrap-input100').hide()
+				$('#Smoothies').parents('.wrap-input100').hide()
+				$('#Coffee').parents('.wrap-input100').hide()
+				$('#Specialties').parents('.wrap-input100').hide()
+				$('#SpecialtyOptions').parents('.wrap-input100').show()
+				$('#Shots').parents('.wrap-input100').hide()
+				$('#Milks').parents('.wrap-input100').hide()
+				$('#teaSweetness').parents('.wrap-input100').hide()
+				$('#teaTopping').parents('.wrap-input100').hide()
+				$('#poppingBoba').parents('.wrap-input100').hide()
+				$('#Jelly').parents('.wrap-input100').hide()	
+				$('#Size').parents('.wrap-input100').hide()
+				$('#Size2').parents('.wrap-input100').hide()
+				$('#Size3').parents('.wrap-input100').show()
+				$('#Specialty_Options').parents('.wrap-input100').hide()
+				$('#Specialty__Options').parents('.wrap-input100').hide()	
 			}
 		})
 
 		$('#teaTopping').on('change', function() {
 			if ($(this).val() === 'Popping Boba') {
 			$('#Coffee').parents('.wrap-input100').hide()
+				$('#baseTeas').parents('.wrap-input100').show()
+				$('#teaSweetness').parents('.wrap-input100').show()
+				$('#teaTopping').parents('.wrap-input100').show()
+				$('#Milks').parents('.wrap-input100').show()
+				$('#Size3').parents('.wrap-input100').show()
+				$('#Coffee').parents('.wrap-input100').hide()
 				$('#Smoothies').parents('.wrap-input100').hide()
 				$('#Specialties').parents('.wrap-input100').hide()
-				$('#Specialty Drinks').parents('.wrap-input100').hide()
+				$('#Specialty_Drinks').parents('.wrap-input100').hide()
+				$('#poppingBoba').parents('.wrap-input100').show()
 				$('#Jelly').parents('.wrap-input100').hide()
 				$('#Shots').parents('.wrap-input100').hide()
 				$('#Size').parents('.wrap-input100').hide()
 				$('#Size2').parents('.wrap-input100').hide()
-				$('#Specialty Options').parents('.wrap-input100').hide()
+				$('#SpecialtyOptions').parents('.wrap-input100').hide()
+				$('#Specialty_Options').parents('.wrap-input100').hide()
+				$('#Specialty__Options').parents('.wrap-input100').hide()
 			}
 		})
 
 		$('#teaTopping').on('change', function() {
 			if ($(this).val() === 'Jelly') {
+				$('#baseTeas').parents('.wrap-input100').show()
+				$('#teaSweetness').parents('.wrap-input100').show()
+				$('#teaTopping').parents('.wrap-input100').show()
+				$('#Milks').parents('.wrap-input100').show()
+				$('#Size3').parents('.wrap-input100').show()
 				$('#Coffee').parents('.wrap-input100').hide()
 				$('#Smoothies').parents('.wrap-input100').hide()
 				$('#Specialties').parents('.wrap-input100').hide()
-				$('#Specialty Drinks').parents('.wrap-input100').hide()
+				$('#Specialty_Drinks').parents('.wrap-input100').hide()
 				$('#poppingBoba').parents('.wrap-input100').hide()
+				$('#Jelly').parents('.wrap-input100').show()
 				$('#Shots').parents('.wrap-input100').hide()
 				$('#Size').parents('.wrap-input100').hide()
 				$('#Size2').parents('.wrap-input100').hide()
-				$('#Specialty Options').parents('.wrap-input100').hide()
+				$('#SpecialtyOptions').parents('.wrap-input100').hide()
+				$('#Specialty_Options').parents('.wrap-input100').hide()
+				$('#Specialty__Options').parents('.wrap-input100').hide()
 			}
 		})
 
 		$('#Coffee').on('change', function() {
 			if ($(this).val() === 'Espresso') {
+				$('#Coffee').parents('.wrap-input100').show()
+				$('#Milks').parents('.wrap-input100').show()
 				$('#baseTeas').parents('.wrap-input100').hide()
 				$('#Smoothies').parents('.wrap-input100').hide()
 				$('#Specialties').parents('.wrap-input100').hide()
-				$('#Specialty Drinks').parents('.wrap-input100').hide()
-				$('#Specialty Options').parents('.wrap-input100').hide()
+				$('#Specialty_Drinks').parents('.wrap-input100').hide()
 				$('#teaSweetness').parents('.wrap-input100').hide()
 				$('#teaTopping').parents('.wrap-input100').hide()
 				$('#poppingBoba').parents('.wrap-input100').hide()
+				$('#Shots').parents('.wrap-input100').show()
 				$('#Jelly').parents('.wrap-input100').hide()
 				$('Size').parents('.wrap-input100').hide()
 				$('Size2').parents('.wrap-input100').hide()
 				$('Size3').parents('.wrap-input100').hide()
+				$('#SpecialtyOptions').parents('.wrap-input100').hide()
+				$('#Specialty_Options').parents('.wrap-input100').hide()
+				$('#Specialty__Options').parents('.wrap-input100').hide()
 			}
 		})
 
 		$('#Coffee').on('change', function() {
 			if ($(this).val() === 'Cortado') {
+				$('#Coffee').parents('.wrap-input100').show()
+				$('#Milks').parents('.wrap-input100').show()
 				$('#baseTeas').parents('.wrap-input100').hide()
 				$('#Smoothies').parents('.wrap-input100').hide()
 				$('#Specialties').parents('.wrap-input100').hide()
-				$('#Specialty Drinks').parents('.wrap-input100').hide()
-				$('#Specialty Options').parents('.wrap-input100').hide()
+				$('#Specialty_Drinks').parents('.wrap-input100').hide()
 				$('#teaSweetness').parents('.wrap-input100').hide()
 				$('#teaTopping').parents('.wrap-input100').hide()
 				$('#poppingBoba').parents('.wrap-input100').hide()
+				$('#Shots').parents('.wrap-input100').show()
 				$('#Jelly').parents('.wrap-input100').hide()
 				$('Size').parents('.wrap-input100').hide()
 				$('Size2').parents('.wrap-input100').hide()
 				$('Size3').parents('.wrap-input100').hide()
+				$('#SpecialtyOptions').parents('.wrap-input100').hide()
+				$('#Specialty_Options').parents('.wrap-input100').hide()
+				$('#Specialty__Options').parents('.wrap-input100').hide()
 			}
 		})
 
 		$('#Coffee').on('change', function() {
 			if ($(this).val() === 'Brewed Coffee') {
+				$('#Coffee').parents('.wrap-input100').show()
+				$('#Milks').parents('.wrap-input100').show()
 				$('#baseTeas').parents('.wrap-input100').hide()
 				$('#Smoothies').parents('.wrap-input100').hide()
 				$('#Specialties').parents('.wrap-input100').hide()
-				$('#Specialty Drinks').parents('.wrap-input100').hide()
-				$('#Specialty Options').parents('.wrap-input100').hide()
+				$('#Specialty_Drinks').parents('.wrap-input100').hide()
 				$('#teaSweetness').parents('.wrap-input100').hide()
 				$('#teaTopping').parents('.wrap-input100').hide()
 				$('#poppingBoba').parents('.wrap-input100').hide()
 				$('#Shots').parents('.wrap-input100').hide()
 				$('#Jelly').parents('.wrap-input100').hide()
 				$('Size').parents('.wrap-input100').hide()
+				$('Size2').parents('.wrap-input100').show()
 				$('Size3').parents('.wrap-input100').hide()
+				$('#SpecialtyOptions').parents('.wrap-input100').hide()
+				$('#Specialty_Options').parents('.wrap-input100').hide()
+				$('#Specialty__Options').parents('.wrap-input100').hide()
 			}
 		})
 
 		$('#Coffee').on('change', function() {
 			if ($(this).val() === 'Capuccino') {
+				$('#Coffee').parents('.wrap-input100').show()
+				$('#Milks').parents('.wrap-input100').show()
 				$('#baseTeas').parents('.wrap-input100').hide()
 				$('#Smoothies').parents('.wrap-input100').hide()
 				$('#Specialties').parents('.wrap-input100').hide()
-				$('#Specialty Drinks').parents('.wrap-input100').hide()
-				$('#Specialty Options').parents('.wrap-input100').hide()
+				$('#Specialty_Drinks').parents('.wrap-input100').hide()
 				$('#teaSweetness').parents('.wrap-input100').hide()
 				$('#teaTopping').parents('.wrap-input100').hide()
 				$('#poppingBoba').parents('.wrap-input100').hide()
 				$('#Shots').parents('.wrap-input100').hide()
 				$('#Jelly').parents('.wrap-input100').hide()
 				$('Size').parents('.wrap-input100').hide()
+				$('Size2').parents('.wrap-input100').show()
 				$('Size3').parents('.wrap-input100').hide()
+				$('#SpecialtyOptions').parents('.wrap-input100').hide()
+				$('#Specialty_Options').parents('.wrap-input100').hide()
+				$('#Specialty__Options').parents('.wrap-input100').hide()
 			}
 		})
 
 		$('#Coffee').on('change', function() {
 			if ($(this).val() === 'Caffe Latte') {
+				$('#Coffee').parents('.wrap-input100').show()
+				$('#Milks').parents('.wrap-input100').show()
 				$('#baseTeas').parents('.wrap-input100').hide()
 				$('#Smoothies').parents('.wrap-input100').hide()
 				$('#Specialties').parents('.wrap-input100').hide()
-				$('#Specialty Drinks').parents('.wrap-input100').hide()
-				$('#Specialty Options').parents('.wrap-input100').hide()
+				$('#Specialty_Drinks').parents('.wrap-input100').hide()
 				$('#teaSweetness').parents('.wrap-input100').hide()
 				$('#teaTopping').parents('.wrap-input100').hide()
 				$('#poppingBoba').parents('.wrap-input100').hide()
 				$('#Shots').parents('.wrap-input100').hide()
 				$('#Jelly').parents('.wrap-input100').hide()
+				$('Size').parents('.wrap-input100').show()
 				$('Size2').parents('.wrap-input100').hide()
 				$('Size3').parents('.wrap-input100').hide()
+				$('#SpecialtyOptions').parents('.wrap-input100').hide()
+				$('#Specialty_Options').parents('.wrap-input100').hide()
+				$('#Specialty__Options').parents('.wrap-input100').hide()
 			}
 		})
 
 		$('#Coffee').on('change', function() {
 			if ($(this).val() === 'Mocha') {
+				$('#Coffee').parents('.wrap-input100').show()
+				$('#Milks').parents('.wrap-input100').show()
 				$('#baseTeas').parents('.wrap-input100').hide()
 				$('#Smoothies').parents('.wrap-input100').hide()
 				$('#Specialties').parents('.wrap-input100').hide()
-				$('#Specialty Drinks').parents('.wrap-input100').hide()
-				$('#Specialty Options').parents('.wrap-input100').hide()
+				$('#Specialty_Drinks').parents('.wrap-input100').hide()
 				$('#teaSweetness').parents('.wrap-input100').hide()
 				$('#teaTopping').parents('.wrap-input100').hide()
 				$('#poppingBoba').parents('.wrap-input100').hide()
 				$('#Shots').parents('.wrap-input100').hide()
 				$('#Jelly').parents('.wrap-input100').hide()
+				$('Size').parents('.wrap-input100').show()
 				$('Size2').parents('.wrap-input100').hide()
 				$('Size3').parents('.wrap-input100').hide()
+				$('#SpecialtyOptions').parents('.wrap-input100').hide()
+				$('#Specialty_Options').parents('.wrap-input100').hide()
+				$('#Specialty__Options').parents('.wrap-input100').hide()
 			}
 		})
 
 		$('#Coffee').on('change', function() {
 			if ($(this).val() === 'Americano') {
+				$('#Coffee').parents('.wrap-input100').show()
+				$('#Milks').parents('.wrap-input100').show()
 				$('#baseTeas').parents('.wrap-input100').hide()
 				$('#Smoothies').parents('.wrap-input100').hide()
 				$('#Specialties').parents('.wrap-input100').hide()
-				$('#Specialty Drinks').parents('.wrap-input100').hide()
-				$('#Specialty Options').parents('.wrap-input100').hide()
+				$('#Specialty_Drinks').parents('.wrap-input100').hide()
 				$('#teaSweetness').parents('.wrap-input100').hide()
 				$('#teaTopping').parents('.wrap-input100').hide()
 				$('#poppingBoba').parents('.wrap-input100').hide()
 				$('#Shots').parents('.wrap-input100').hide()
 				$('#Jelly').parents('.wrap-input100').hide()
+				$('Size').parents('.wrap-input100').show()
 				$('Size2').parents('.wrap-input100').hide()
 				$('Size3').parents('.wrap-input100').hide()
+				$('#SpecialtyOptions').parents('.wrap-input100').hide()
+				$('#Specialty_Options').parents('.wrap-input100').hide()
+				$('#Specialty__Options').parents('.wrap-input100').hide()
 			}
 		})
 	</script>
