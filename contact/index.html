@@ -20,7 +20,7 @@
 	<div class="container-contact100">
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form" action="https://getsimpleform.com/messages?form_api_token=477cacf6dad031bf01d7e0eb438c3209" method="post">
-				<input type='hidden' name='redirect_to' value='/' /> <!-- Ronnie you're gonna have to set up a page to redirect to after submission -->
+				<input type='hidden' name='/contact/order.html' value='/' />
 				<span class="contact100-form-title">
 					Place an Order!
 				</span>
@@ -55,7 +55,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Drink</span>
 					<div>
-						<select class="selection-2" name="drink">
+						<select id="Drink" class="selection-2" name="Drink">
 							<option>Select Drink</option>
 							<option>Tea</option>
 							<option>Smoothies</option>
@@ -70,7 +70,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Tea</span>
 					<div>
-						<select  class="selection-2" name="tea">
+						<select id="baseTeas" class="selection-2" name="Base Tea">
 							<option>Select Tea</option>
 							<option>Taro Milk</option>
 							<option>House Black Tea</option>
@@ -86,7 +86,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Coffee</span>
 					<div>
-						<select  class="selection-2" name="coffee">
+						<select id="Coffee" class="selection-2" name="Coffee">
 							<option>Select Coffee</option>
 							<option>Espresso</option>
 							<option>Cortado</option>
@@ -104,7 +104,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Specialty Drinks</span>
 					<div>
-						<select  class="selection-2" name="speciality drink">
+						<select id="Specialty_Drinks" class="selection-2" name="Speciality Drink">
 							<option>Select Specialty Drink</option>
 							<option>Hong Kong Red</option>
 							<option>Iced Coffee Milk Tea</option>
@@ -123,7 +123,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Specialties</span>
 					<div>
-						<select i class="selection-2" name="specialty">
+						<select id="Specialties" class="selection-2" name="Specialty">
 							<option>Select Specialties</option>
 							<option>Coco Loco</option>
 							<option>Matcha Latte</option>
@@ -137,7 +137,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Smoothies</span>
 					<div>
-						<select  class="selection-2" name="smoothie">
+						<select id="Smoothies" class="selection-2" name="Smoothie">
 							<option>Select Smoothies</option>
 							<option>Strawberry Freeze</option>
 						</select>
@@ -148,7 +148,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Milk</span>
 					<div>
-						<select class="selection-2" name="milk">
+						<select id="Milks" class="selection-2" name="Milk">
 							<option>Select Milk</option>
 							<option>No Milk</option>
 							<option>Organic Milk</option>
@@ -162,7 +162,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Sweetness</span>
 					<div>
-						<select class="selection-2" name="tea sweetness">
+						<select teaSweetness class="selection-2" name="Tea Sweetness">
 							<option>Select Sweetness</option>
 							<option>None</option>
 							<option>Less</option>
@@ -176,7 +176,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Toppings(+$0.50 ea)</span>
 					<div>
-						<select  class="selection-2" name="topping">
+						<select id="teaTopping" class="selection-2" name="Tea Topping">
 							<option>Select Toppings</option>
 							<option>Brown Sugar Boba</option>
 							<option>Aloe Vera</option>
@@ -194,7 +194,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Popping Boba</span>
 					<div>
-						<select class="selection-2" name="popping boba">
+						<select id="poppingBoba" class="selection-2" name="Popping Boba">
 							<option>Select Popping Boba</option>
 							<option>Mango</option>
 							<option>Passion Fruit</option>
@@ -209,7 +209,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Jelly</span>
 					<div>
-						<select  class="selection-2" name="jelly">
+						<select id="Jelly" class="selection-2" name="Jelly">
 							<option>Select Jelly</option>
 							<option>Lychee</option>
 							<option>Coconut</option>
@@ -223,7 +223,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Shots</span>
 					<div>
-						<select  class="selection-2" name="shots">
+						<select id="Shots" class="selection-2" name="Shots">
 							<option>Number of Shots</option>
 							<option>Single</option>
 							<option>Double</option>
@@ -235,7 +235,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Size</span>
 					<div>
-						<select class="selection-2" name="size">
+						<select id="Size" class="selection-2" name="Size">
 							<option>Select Size</option>
 							<option>12oz hot</option>
 							<option>16oz hot</option>
@@ -248,7 +248,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Size</span>
 					<div>
-						<select  class="selection-2" name="Size2">
+						<select id="Size2" class="selection-2" name="Size 2">
 							<option>Select Size</option>
 							<option>12oz hot</option>
 							<option>16oz hot</option>	
@@ -260,7 +260,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Size</span>
 					<div>
-						<selectclass="selection-2" name="size 3">
+						<select id="Size3" class="selection-2" name="Size 3">
 							<option>Select Size</option>
 							<option>16oz hot</option>
 							<option>22oz cold</option>	
@@ -272,7 +272,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Specialty Options</span>
 					<div>
-						<select  class="selection-2" name="Specialty options">
+						<select id="SpecialtyOptions" class="selection-2" name="Specialty Options">
 							<option>Select Options</option>
 							<option>None</option>
 							<option>Non-Caffeinated</option>
@@ -285,7 +285,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Specialty Options</span>
 					<div>
-						<select class="selection-2" name="Specialty Options">
+						<select id="Specialty_Options" class="selection-2" name="Specialty Options2">
 							<option>Select Options</option>
 							<option>None</option>
 							<option>Hot Drink Option</option>
@@ -297,7 +297,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Specialty Options</span>
 					<div>
-						<select class="selection-2" name="Specialty Options">
+						<select id="Specialty__Options" class="selection-2" name="Specialty Options3">
 							<option>Select Options</option>
 							<option>None</option>
 							<option>Non-Caffeinated</option>
