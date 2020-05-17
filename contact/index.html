@@ -14,6 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 	<div class="container-contact100">
@@ -33,7 +34,7 @@
 				
 							<div class="wrap-input100 validate-input" data-validate="Phone# is required">
 					<span class="label-input100">Your Phone Number</span>
-					<input class="input100" type="text" name="name" placeholder="Enter your phone number">
+					<input class="input100" type="text" name="phone" placeholder="Enter your phone number">
 					<span class="focus-input100"></span>
 				</div>
 				
@@ -47,14 +48,14 @@
 				
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Pickup Time</span>
-					<input class="input100" type="text" name="name" placeholder="What time can you pick up your order(s)">
+					<input class="input100" type="text" name="pickup time" placeholder="What time can you pick up your order(s)">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Drink</span>
 					<div>
-						<select id="Drink" class="selection-2" name="order">
+						<select class="selection-2" name="drink">
 							<option>Select Drink</option>
 							<option>Tea</option>
 							<option>Smoothies</option>
@@ -69,7 +70,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Tea</span>
 					<div>
-						<select id="baseTeas" class="selection-2" name="order">
+						<select  class="selection-2" name="tea">
 							<option>Select Tea</option>
 							<option>Taro Milk</option>
 							<option>House Black Tea</option>
@@ -85,7 +86,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Coffee</span>
 					<div>
-						<select id="Coffee" class="selection-2" name="order">
+						<select  class="selection-2" name="coffee">
 							<option>Select Coffee</option>
 							<option>Espresso</option>
 							<option>Cortado</option>
@@ -103,7 +104,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Specialty Drinks</span>
 					<div>
-						<select id="Specialty_Drinks" class="selection-2" name="order">
+						<select  class="selection-2" name="speciality drink">
 							<option>Select Specialty Drink</option>
 							<option>Hong Kong Red</option>
 							<option>Iced Coffee Milk Tea</option>
@@ -122,7 +123,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Specialties</span>
 					<div>
-						<select id="Specialties" class="selection-2" name="order">
+						<select i class="selection-2" name="specialty">
 							<option>Select Specialties</option>
 							<option>Coco Loco</option>
 							<option>Matcha Latte</option>
@@ -136,7 +137,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Smoothies</span>
 					<div>
-						<select id="Smoothies" class="selection-2" name="order">
+						<select  class="selection-2" name="smoothie">
 							<option>Select Smoothies</option>
 							<option>Strawberry Freeze</option>
 						</select>
@@ -147,7 +148,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Milk</span>
 					<div>
-						<select id="Milks" class="selection-2" name="order">
+						<select class="selection-2" name="milk">
 							<option>Select Milk</option>
 							<option>No Milk</option>
 							<option>Organic Milk</option>
@@ -161,7 +162,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Sweetness</span>
 					<div>
-						<select id="teaSweetness" class="selection-2" name="order">
+						<select class="selection-2" name="tea sweetness">
 							<option>Select Sweetness</option>
 							<option>None</option>
 							<option>Less</option>
@@ -175,7 +176,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Toppings(+$0.50 ea)</span>
 					<div>
-						<select id="teaTopping" class="selection-2" name="topping">
+						<select  class="selection-2" name="topping">
 							<option>Select Toppings</option>
 							<option>Brown Sugar Boba</option>
 							<option>Aloe Vera</option>
@@ -193,7 +194,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Popping Boba</span>
 					<div>
-						<select id="poppingBoba" class="selection-2" name="order">
+						<select class="selection-2" name="popping boba">
 							<option>Select Popping Boba</option>
 							<option>Mango</option>
 							<option>Passion Fruit</option>
@@ -208,7 +209,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Jelly</span>
 					<div>
-						<select id="Jelly" class="selection-2" name="order">
+						<select  class="selection-2" name="jelly">
 							<option>Select Jelly</option>
 							<option>Lychee</option>
 							<option>Coconut</option>
@@ -222,7 +223,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Shots</span>
 					<div>
-						<select id="Shots" class="selection-2" name="order">
+						<select  class="selection-2" name="shots">
 							<option>Number of Shots</option>
 							<option>Single</option>
 							<option>Double</option>
@@ -234,7 +235,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Size</span>
 					<div>
-						<select id="Size" class="selection-2" name="order">
+						<select class="selection-2" name="size">
 							<option>Select Size</option>
 							<option>12oz hot</option>
 							<option>16oz hot</option>
@@ -247,7 +248,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Size</span>
 					<div>
-						<select id="Size2" class="selection-2" name="order">
+						<select  class="selection-2" name="Size2">
 							<option>Select Size</option>
 							<option>12oz hot</option>
 							<option>16oz hot</option>	
@@ -259,7 +260,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Size</span>
 					<div>
-						<select id="Size3" class="selection-2" name="order">
+						<selectclass="selection-2" name="size 3">
 							<option>Select Size</option>
 							<option>16oz hot</option>
 							<option>22oz cold</option>	
@@ -271,7 +272,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Specialty Options</span>
 					<div>
-						<select id="SpecialtyOptions" class="selection-2" name="order">
+						<select  class="selection-2" name="Specialty options">
 							<option>Select Options</option>
 							<option>None</option>
 							<option>Non-Caffeinated</option>
@@ -284,7 +285,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Specialty Options</span>
 					<div>
-						<select id="Specialty_Options" class="selection-2" name="order">
+						<select class="selection-2" name="Specialty Options">
 							<option>Select Options</option>
 							<option>None</option>
 							<option>Hot Drink Option</option>
@@ -296,7 +297,7 @@
 				<div class="wrap-input100 validate-input" data-validate="Required">
 					<span class="label-input100">Specialty Options</span>
 					<div>
-						<select id="Specialty__Options" class="selection-2" name="order">
+						<select class="selection-2" name="Specialty Options">
 							<option>Select Options</option>
 							<option>None</option>
 							<option>Non-Caffeinated</option>
@@ -307,14 +308,14 @@
 
 				<div class="wrap-input100 validate-input" data-validate = "Required">
 					<span class="label-input100">Additional Order Info</span>
-					<textarea class="input100" name="message" placeholder="Order Notes"></textarea>
+					<textarea class="input100" name="Additional order info" placeholder="Order Notes"></textarea>
 					<span class="focus-input100"></span>
 				</div>
 				<div class="g-recaptcha" data-sitekey="6LfZgfgUAAAAABVCHcKeXXWyLQBSvH9TeObBD8kG"></div>
 				<div class="container-contact100-form-btn">
 					<div class="wrap-contact100-form-btn">
 						<div class="contact100-form-bgbtn"></div>
-						<button class="contact100-form-btn" type="submit" value="Submit">
+						<input class="contact100-form-btn" type="submit" value="Submit">
 							<span>
 								Submit
 								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
@@ -762,7 +763,6 @@
 	<script src="vendor/daterangepicker/daterangepicker.js"></script>
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 	<script src="js/main.js"></script>
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<!-- THIS PAGE CREATED BY ZACH MEYERS & RONNIE LI 5.2020 IN CONJUCTION WITH COLORLIB LIBRARIES. ALL RIGHTS RESERVED. HTTPS://ZACHMEYERS.ME.  HTTPS://RONNIELI.TK-->
 </body>
 </html>
